@@ -7,13 +7,13 @@ index:
 	; rcx: rindex
 	; r8: cindex	; 2
 
-	imul		rcx, rdx
-	imul		rcx, 4
+	imul	rcx, rdx
+	imul	rcx, 4
 
-	imul 		r8, 4
+	imul 	r8, 4
 
-	add			rdi, rcx
-	add			rdi, r8
+	add	rdi, rcx
+	add	rdi, r8
 
-	mov			rax, [rdi]
+	mov	rax, [rdi]
 	ret
