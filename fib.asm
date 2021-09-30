@@ -8,7 +8,7 @@ fib:
 	jle	L0			; if n <= 1 go to L0
 	lea	rdi, [rbx - 1]		; otherwise setup rdi for the n - 1 call
 	call	fib
-	push 	rax			; push the result?!?!
+	push 	rax			; push the result
 	lea	rdi, [rbx - 2]		; setup rdi for the n-2 call
 	call	fib
 	pop	rdx
